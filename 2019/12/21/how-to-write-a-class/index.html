@@ -8,6 +8,7 @@
 <link rel="canonical" href="http://allenxz.github.io/2019/12/21/how-to-write-a-class/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="description" content="面向对象编程中，不得不提的就是类这个熟悉的概念。而在JavaScript中，实现类的方法和其他的语言有所不同。JS中是没有类这个概念的，在ES6之前甚至没有class这个关键字。要封装一个类，需要灵活的使用JS的各种特性去模拟。ES6中的class也不过是一个封装好的语法糖罢了。  封装一个类，主要需要考虑的点有：  实现静态私有变量和静态私有方法 实现私有变量和私有方法 实现特权方法 实现公有">
+<meta name="keywords" content="设计模式,JavaScript">
 <meta property="og:type" content="website">
 <meta property="og:title" content="怎么去封装一个类">
 <meta property="og:url" content="http://allenxz.github.io/2019/12/21/how-to-write-a-class/index.html">
@@ -15,15 +16,16 @@
 <meta property="og:description" content="面向对象编程中，不得不提的就是类这个熟悉的概念。而在JavaScript中，实现类的方法和其他的语言有所不同。JS中是没有类这个概念的，在ES6之前甚至没有class这个关键字。要封装一个类，需要灵活的使用JS的各种特性去模拟。ES6中的class也不过是一个封装好的语法糖罢了。  封装一个类，主要需要考虑的点有：  实现静态私有变量和静态私有方法 实现私有变量和私有方法 实现特权方法 实现公有">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://s2.ax1x.com/2019/12/18/QHlOM9.md.jpg">
-<meta property="og:updated_time" content="2019-12-21T09:27:15.335Z">
+<meta property="og:updated_time" content="2019-12-24T02:29:01.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="怎么去封装一个类">
 <meta name="twitter:description" content="面向对象编程中，不得不提的就是类这个熟悉的概念。而在JavaScript中，实现类的方法和其他的语言有所不同。JS中是没有类这个概念的，在ES6之前甚至没有class这个关键字。要封装一个类，需要灵活的使用JS的各种特性去模拟。ES6中的class也不过是一个封装好的语法糖罢了。  封装一个类，主要需要考虑的点有：  实现静态私有变量和静态私有方法 实现私有变量和私有方法 实现特权方法 实现公有">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/12/18/QHlOM9.md.jpg">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"url":"http://allenxz.github.io","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg","description":null,"author":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Programming","url":"http://allenxz.github.io/2019/12/21/how-to-write-a-class/","headline":"怎么去封装一个类","image":"https://s2.ax1x.com/2019/12/18/QHlOM9.md.jpg","datePublished":"2019-12-21T07:01:30.936Z","dateModified":"2019-12-24T02:29:01.403Z","keywords":"设计模式,JavaScript","description":null,"publisher":{"@type":"Organization","name":"Allen Tan","logo":{"@type":"ImageObject","url":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"}},"author":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://allenxz.github.io/2019/12/21/how-to-write-a-class/"},"thumbnailUrl":"https://s2.ax1x.com/2019/12/18/QHlOM9.md.jpg"}]</script>
 <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
 <link href="/styles.e987407a0a9d77c7ba00.css" rel="stylesheet">
 <link rel="stylesheet" href="/theme.6814db2ccf672c87c4fb.css">
-<script src="/config.41ca786811873ac3341e.js"></script>
+<script src="/config.f131131c2a4ddfe9b554.js"></script>
 </head>
 <body lang="en">
 <is-a></is-a>

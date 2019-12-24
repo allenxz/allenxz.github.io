@@ -8,6 +8,7 @@
 <link rel="canonical" href="http://allenxz.github.io/2019/11/11/scope&amp;closure/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="description" content="闭包，虽然名字听起来无趣乏味，但在使用时，你感受到它无与伦比的美感。 闭包闭包是作用域应用的特殊情况，有两种表现：  函数作为参数进行传递 12345678910function create() &amp;#123;  const a = 100  return function() &amp;#123;    console.log(a)  &amp;#125;&amp;#125;const fn = create()con">
+<meta name="keywords" content="面试,JavaScript">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JavaScript —— 作用域和闭包">
 <meta property="og:url" content="http://allenxz.github.io/2019/11/11/scope&closure/index.html">
@@ -15,15 +16,16 @@
 <meta property="og:description" content="闭包，虽然名字听起来无趣乏味，但在使用时，你感受到它无与伦比的美感。 闭包闭包是作用域应用的特殊情况，有两种表现：  函数作为参数进行传递 12345678910function create() &amp;#123;  const a = 100  return function() &amp;#123;    console.log(a)  &amp;#125;&amp;#125;const fn = create()con">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/11/MlFI0A.md.jpg">
-<meta property="og:updated_time" content="2019-11-13T07:43:04.758Z">
+<meta property="og:updated_time" content="2019-12-24T02:29:37.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript —— 作用域和闭包">
 <meta name="twitter:description" content="闭包，虽然名字听起来无趣乏味，但在使用时，你感受到它无与伦比的美感。 闭包闭包是作用域应用的特殊情况，有两种表现：  函数作为参数进行传递 12345678910function create() &amp;#123;  const a = 100  return function() &amp;#123;    console.log(a)  &amp;#125;&amp;#125;const fn = create()con">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/11/11/MlFI0A.md.jpg">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"url":"http://allenxz.github.io","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg","description":null,"author":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Programming","url":"http://allenxz.github.io/2019/11/11/scope&closure/","headline":"JavaScript —— 作用域和闭包","image":"https://s2.ax1x.com/2019/11/11/MlFI0A.md.jpg","datePublished":"2019-11-11T13:04:20.894Z","dateModified":"2019-12-24T02:29:37.691Z","keywords":"面试,JavaScript","description":null,"publisher":{"@type":"Organization","name":"Allen Tan","logo":{"@type":"ImageObject","url":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"}},"author":{"@type":"Person","name":"Allen Tan","description":"Talk is cheap, show me the code.","image":"https://s2.ax1x.com/2019/09/28/ulBTpT.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://allenxz.github.io/2019/11/11/scope&closure/"},"thumbnailUrl":"https://s2.ax1x.com/2019/11/11/MlFI0A.md.jpg"}]</script>
 <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
 <link href="/styles.e987407a0a9d77c7ba00.css" rel="stylesheet">
 <link rel="stylesheet" href="/theme.6814db2ccf672c87c4fb.css">
-<script src="/config.41ca786811873ac3341e.js"></script>
+<script src="/config.f131131c2a4ddfe9b554.js"></script>
 </head>
 <body lang="en">
 <is-a></is-a>
